@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/redwert/test-coin.git"
@@ -15,5 +12,14 @@
   "bugs": {
     "url": "https://github.com/redwert/test-coin/issues"
   },
-  "homepage": "https://github.com/redwert/test-coin#readme"
+  "homepage": "https://github.com/redwert/test-coin#readme",
+  "scripts": {
+    "test": "truffle test",
+    "coverage": "truffle run coverage",
+    "ganache": "ganache-cli",
+    "migrate": "truffle migrate --network $1"
+  },
+  "dependencies": {
+    "config": "^3.3.6"
+  }
 }
