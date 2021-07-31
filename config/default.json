@@ -2,9 +2,11 @@
   "token": {
     "name": "Solidity coin",
     "symbol": "SOL",
-    "wallet": {
-      "address": null,
-      "privateKey": null
-    }
-  }
+    "initSupply": "100000000000000000000000000"
+  },
+  "wallet": {
+    "address": null,
+    "privateKey": null
+  },
+  "infuraProjectId": null
 }

@@ -50,9 +50,10 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * All two of these values are immutable: they can only be set once during
      * construction.
      */
-    constructor(string memory name_, string memory symbol_) {
+    constructor(string memory name_, string memory symbol_, address contractOwnerAddress, uint256 ownerSupply) {
         _name = name_;
         _symbol = symbol_;
+        _mint(contractOwnerAddress, ownerSupply);
     }
 
     /**
@@ -325,7 +326,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * - when `to` is zero, `amount` of ``from``'s tokens will be burned.
      * - `from` and `to` are never both zero.
      *
-     * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
+     * To learn more about hooks, head to xref:ROOT:extending-contracts_.adoc#using-hooks[Using Hooks].
      */
     function _beforeTokenTransfer(
         address from,
@@ -345,7 +346,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * - when `to` is zero, `amount` of ``from``'s tokens have been burned.
      * - `from` and `to` are never both zero.
      *
-     * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].
+     * To learn more about hooks, head to xref:ROOT:extending-contracts_.adoc#using-hooks[Using Hooks].
      */
     function _afterTokenTransfer(
         address from,

@@ -1,4 +1,4 @@
 node_modules/
 .env
 build/
-config/local.json
+config/local*.json
