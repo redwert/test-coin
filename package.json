@@ -20,6 +20,7 @@
     "migrate": "truffle migrate --network $1"
   },
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.2",
     "config": "^3.3.6"
   }
 }

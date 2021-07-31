@@ -1,6 +1,10 @@
 {
   "token": {
     "name": "Solidity coin",
-    "symbol": "SOL"
+    "symbol": "SOL",
+    "wallet": {
+      "address": null,
+      "privateKey": null
+    }
   }
 }

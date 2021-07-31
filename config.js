@@ -1,4 +1,6 @@
 const {join} = require('path')
 const config = require('config')
 
-module.exports = config.util.loadFileConfigs(join(__dirname, 'config'))
+const data = config.util.loadFileConfigs(join(__dirname, 'config'))
+console.log({data})
+//module.exports = config.util.loadFileConfigs(join(__dirname, 'config'))
